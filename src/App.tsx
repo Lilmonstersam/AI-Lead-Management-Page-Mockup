@@ -527,6 +527,26 @@ const App = () => {
                  </div>
                  
                  <div>
+                   <label className="block text-[10px] font-bold uppercase tracking-widest text-white/60 mb-3">What are you interested in? *</label>
+                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                     <label className="relative flex items-center gap-3 p-4 bg-white/5 border border-white/10 rounded-xl cursor-pointer hover:bg-white/10 transition-all has-[:checked]:border-[#E41B6F] has-[:checked]:bg-[#E41B6F]/5 group">
+                       <input type="radio" name="requestType" value="demo" className="peer sr-only" defaultChecked />
+                       <div className="w-5 h-5 rounded-full border-2 border-white/20 flex items-center justify-center peer-checked:border-[#E41B6F] transition-all">
+                         <div className="w-2.5 h-2.5 rounded-full bg-[#E41B6F] scale-0 peer-checked:scale-100 transition-transform"></div>
+                       </div>
+                       <span className="text-sm font-bold text-white pr-2">Request a Demo</span>
+                     </label>
+                     <label className="relative flex items-center gap-3 p-4 bg-white/5 border border-white/10 rounded-xl cursor-pointer hover:bg-white/10 transition-all has-[:checked]:border-[#E41B6F] has-[:checked]:bg-[#E41B6F]/5 group">
+                       <input type="radio" name="requestType" value="strategy" className="peer sr-only" />
+                       <div className="w-5 h-5 rounded-full border-2 border-white/20 flex items-center justify-center peer-checked:border-[#E41B6F] transition-all">
+                         <div className="w-2.5 h-2.5 rounded-full bg-[#E41B6F] scale-0 peer-checked:scale-100 transition-transform"></div>
+                       </div>
+                       <span className="text-sm font-bold text-white pr-2">Book a Strategy Call</span>
+                     </label>
+                   </div>
+                 </div>
+
+                 <div>
                    <label className="block text-[10px] font-bold uppercase tracking-widest text-white/60 mb-2">Your Message... *</label>
                    <textarea rows={3} className="w-full px-4 py-3 bg-white/10 border border-white/10 rounded-xl focus:border-[#E41B6F] outline-none transition-all text-white text-sm font-bold"></textarea>
                  </div>
